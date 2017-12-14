@@ -1,0 +1,28 @@
+{
+  "name": "bem",
+  "version": "1.0.0",
+  "description": "Utility for generating BEM classnames",
+  "main": "index.js",
+  "repository": "https://github.com/jamesmcnamara/bem.git",
+  "author": "James McNamara",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-lodash": "^3.3.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  },
+  "scripts": {
+    "test": "mocha --require babel-register",
+    "compile": "babel index.js --out-dir lib",
+    "preversion": "npm test",
+    "version": "npm run compile",
+    "postversion": "git push origin master"
+  }
+}
