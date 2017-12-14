@@ -1,2 +1,4 @@
 src
 test
+yarn-error.log
+npm-debug.log
