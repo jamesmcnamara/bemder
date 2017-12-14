@@ -1,5 +1,5 @@
 {
-  "name": "bem",
+  "name": "bemder",
   "version": "0.1.0",
   "description": "Utility for generating BEM classnames",
   "main": "index.js",
